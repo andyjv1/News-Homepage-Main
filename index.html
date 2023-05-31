@@ -1,110 +1,143 @@
+<!-- @format -->
 <!DOCTYPE html>
+
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>News Homepage Main</title>
-        <link rel="stylesheet" href="./index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Josefin+Sans:ital,wght@0,300;0,400;1,600&family=League+Spartan:wght@400;500;700&family=Overpass:wght@400;700&family=Plus+Jakarta+Sans&family=Poppins:wght@200;400;600&display=swap"
-            rel="stylesheet">
-    </head>
-
-    <body id="body">
-
-        <div class="topnav" id="myLinks">
-            <img  id="icon-menu-close" src="./assets/images/icon-menu-close.svg" alt="">
-            <div class="topnavtext">
-                <span >Home</span>
-                <span >New</span>
-                <span >Popular</span>
-                <span >Trending</span>
-                <span >Categories</span>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>News Homepage Main</title>
+    <link href="./index.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;family=Josefin+Sans:ital,wght@0,300;0,400;1,600&amp;family=League+Spartan:wght@400;500;700&amp;family=Overpass:wght@400;700&amp;family=Plus+Jakarta+Sans&amp;family=Poppins:wght@200;400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body">
+    <nav class="topnav" id="main-links">
+      <img
+        alt="Close menu button"
+        id="icon-menu-close"
+        src="./assets/images/icon-menu-close.svg"
+      />
+      <div class="mobile-nav-text">
+        <span>Home</span>
+        <span>New</span>
+        <span>Popular</span>
+        <span>Trending</span>
+        <span>Categories</span>
+      </div>
+    </nav>
+    <main class="main-body">
+      <section id="main-overlay"></section>
+      <nav class="nav">
+        <img alt="Logo" class="logo" src="./assets/images/logo.svg" />
+        <div class="nav-text">
+          <span>Home</span>
+          <span>New</span>
+          <span>Popular</span>
+          <span>Trending</span>
+          <span>Categories</span>
         </div>
-            <main class="mainBody">
-                <div id="overlay"></div>
-                <div class="nav navFlex">
-                    <img class="logo" src="./assets/images/logo.svg" alt="">
-                    <div class="navText">
-                        <span>Home</span>
-                        <span>New</span>
-                        <span>Popular</span>
-                        <span>Trending</span>
-                        <span>Categories</span>
-                    </div>
-                    <img class="icon-menu" id="icon-menu" src="./assets/images/icon-menu.svg" alt="">
+        <img
+          alt="Hamburger button"
+          class="icon-menu"
+          id="icon-menu"
+          src="./assets/images/icon-menu.svg"
+        />
+      </nav>
+      <!-- <img
+        alt="Abstract image with shapes - Desktop"
+        class="main-image-desktop"
+        src="./assets/images/image-web-3-desktop.jpg"
+      />
+      <img
+        alt="Abstract image with shapes - Mobile"
+        class="main-image-mobile"
+        src="./assets/images/image-web-3-mobile.jpg"
+      /> -->
 
-                </div>
-        
-                        <img class="bigImgDesk" src="./assets/images/image-web-3-desktop.jpg" alt="">
-                        <img class="bigImgMob" src="./assets/images/image-web-3-mobile.jpg" alt="">
-                            <div class="textbigMainBodyh1 textbigMainBodyh1div">
-                                <h1>The Bright Future of Web 3.0?</h1>
-                            </div>
-                            <div class="smalltext textbigMainBodyh1div">
-                                <div class="smalltextp">
-                                    <p>We dive into the next evolution of the web that
-                                        claims to out the nower of the nattorms back
-                                        into the hands of the people. But is it really
-                                        fulfilling its promise?</p>
-                                </div>
-                                <div class="button"><button>READ MORE</button></div>
-                            </div>
+      <picture class="main-image">
+        <source srcset="./assets/images/image-web-3-mobile.jpg" media="(max-width: 376px)" />        
+		<source srcset="./assets/images/image-web-3-desktop.jpg" />
+        <img src="./assets/images/image-web-3-mobile.jpg" alt="Abstract image with shapes" />
+      </picture>
 
-
-                    <div class="new newflex">
-                        <h2>New</h2>
-                        <div class="blackBox bottomBorder">
-                            <h3>Hydrogen VS Electric Cars</h3>
-                            <p >Will hydrogen-fueled cars ever catch up
-                                to EVs?</p>
-                        </div>
-                        <div class="blackBox bottomBorder">
-                            <h3>The Downsides of Al Artistry</h3>
-                            <p >What are the possible adverse effects of
-                                on-demand Al image generation!</p>
-                        </div>
-                        <div class="blackBox ">
-                            <h3>Is VC Funding Drying Up?</h3>
-                            <p>Private funding by VC firms is down 50%
-                                YOY. We take a look at what that means</p>
-                        </div>
-                    </div>
-
-                    <div class="beige beige1">
-                        <div class="smallImg beigeSub"><img src="./assets/images/image-retro-pcs.jpg" alt=""></div>
-                        <div class="beigeText beigeSub">
-                            <h2>01</h2>
-                            <h4>Reviving Retro PCs</h4>
-                            <p>What happens when old PCs
-                                are given modern upgrades?</p>
-                        </div>
-                    </div>
-                    <div class="beige beige2">
-                        <div class="smallImg beigeSub"><img src="./assets/images/image-top-laptops.jpg" alt=""></div>
-                        <div class="beigeText beigeSub">
-                            <h2>02</h2>
-                            <h4>Top 10 Laptops of 2022</h4>
-                            <p>Our best nicks for various
-                                needs and budgets.</p>
-                        </div>
-                    </div>
-                    <div class="beige beige3">
-                        <div class="smallImg beigeSub"><img src="./assets/images/image-gaming-growth.jpg" alt=""></div>
-                        <div class="beigeText beigeSub">
-                            <h2>03</h2>
-                            <h4>The Growth of Gaming</h4>
-                            <p>How the pandemic has sparked
-                                fresh opportunities.</p>
-                        </div>
-                    </div>
-                </main>
-        <script src="./app.js"></script>
-    </body>
-
+      <div class="main-body-text main-body-div">
+        <h1>The Bright Future of Web 3.0?</h1>
+      </div>
+      <div class="smalltext main-body-div">
+        <div class="smalltextp">
+          <p>
+            We dive into the next evolution of the web that claims to out the
+            nower of the nattorms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+        </div>
+        <div class="button">
+          <button>READ MORE</button>
+        </div>
+      </div>
+      <section class="new newflex">
+        <h2>New</h2>
+        <article class="blackBox bottomBorder">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+        <article class="blackBox bottomBorder">
+          <h3>The Downsides of Al Artistry</h3>
+          <p>
+            What are the possible adverse effects of on-demand Al image
+            generation!
+          </p>
+        </article>
+        <article class="blackBox">
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means
+          </p>
+        </article>
+      </section>
+      <article class="article article-one">
+        <div class="article-image">
+          <img alt="Retro PCs" src="./assets/images/image-retro-pcs.jpg" />
+        </div>
+        <div class="article-text">
+          <h2>01</h2>
+          <h4>Reviving Retro PCs</h4>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </article>
+      <article class="article article-two">
+        <div class="article-image">
+          <img
+            alt="Illuminated keyboard keys"
+            src="./assets/images/image-top-laptops.jpg"
+          />
+        </div>
+        <div class="article-text">
+          <h2>02</h2>
+          <h4>Top 10 Laptops of 2022</h4>
+          <p>Our best nicks for various needs and budgets.</p>
+        </div>
+      </article>
+      <article class="article article-three">
+        <div class="article-image">
+          <img
+            alt="Playstation controller being tossed in the air"
+            src="./assets/images/image-gaming-growth.jpg"
+          />
+        </div>
+        <div class="article-text">
+          <h2>03</h2>
+          <h4>The Growth of Gaming</h4>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </article>
+    </main>
+    <script src="./app.js"></script>
+  </body>
 </html>
